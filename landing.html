@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDING PAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="tell.webp" class="logo"></a>
+            <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#explore">EXPLORE</a></li>
+            <li><a href="#articles">ARTICLES</a></li>
+            <li><a href="#places">PLACES</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </header> 
+        <div class="content">
+            <div class="textbox">
+                <h2>The Ancient World Of Egypt</h2>
+                <br><p>Discover the last remaining of ancient Egypt.<br><br>The Ancient Egyptian civilization famous for its pyramids, pharaohs, mummies and tombs flourished for thousands of years. Egypt contributed to modern day society with its many cultural developments particularly in language and mathematics.</p>
+            </div>
+            <div class="imgbox">
+                <img src="hold.jpg" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="hold.jpg" onclick="imgSlider('hold.jpg')"></li>
+            
+            <li><img src="pret.jpg" onclick="imgSlider('pret.jpg')"></li>
+        </ul>
+       
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.pepsi').src = anything;
+        }
+
+    </script>
+</body>
+</html>
